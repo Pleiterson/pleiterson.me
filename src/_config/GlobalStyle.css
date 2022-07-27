@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+  --font-normal: 'Roboto', sans-serif;
+  --font-details: 'Roboto Mono', monospace;
+  --font-code: 'JetBrains Mono', monospace;
+
+  --color-bg-one: #f8f8f2;
+  --color-bg-two: #282a36;
+  --color-bg-three: #44475a;
+  --color-bg-four: #6272a4;
+  --color-bg-five: #ffffff;
+  --color-bg-six: #4fe0b6;
+  --color-bg-seven: #f5f5f5;
+  --color-bg-eight: #8be9fd;
+
+  --color-txt-one: #f8f8f2;
+  --color-txt-two: #282a36;
+  --color-txt-three: #44475a;
+  --color-txt-four: #6272a4;
+  --color-txt-five: #ffffff;
+  --color-txt-six: #4fe0b6;
+  --color-txt-seven: #f5f5f5;
+  --color-txt-eight: #8be9fd;
+
+  --color-ln-one: #f8f8f2;
+  --color-ln-two: #282a36;
+  --color-ln-three: #44475a;
+  --color-ln-four: #6272a4;
+  --color-ln-five: #ffffff;
+  --color-ln-six: #4fe0b6;
+  --color-ln-seven: #f5f5f5;
+  --color-ln-eight: #8be9fd;
+
+  --color-bg-hover-button: rgba(68, 71, 90, 0.1);
+  --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: var(--font-normal);
+}
+
+body {
+  height: 100vh;
+  background-color: var(--color-bg-one);
+  color: var(--color-txt-two);
+}
+
+body, input, button, textarea {
+  font-size: 1em;
+}
+
+button {
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: .6em;
+  height: .6em;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--color-bg-one);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-bg-six);
+  border-radius: .5em;
+}
+
+/* @media screen and (max-width: 375px) {
+  body, input, button, textarea {
+    font-size: 1em;
+  }
+} */
+
+/* Versão para Mobile */
+@media only screen and (max-width: 600px) {
+  body, input, button, textarea {
+    font-size: 1em;
+  }
+}
+
+/* Versão para Tablet */
+@media only screen and (max-width: 768px) {}
+
+/* Versão para Laptop */
+@media only screen and (max-width: 992px) {}
+
+/* Versão para Large Screen */
+@media only screen and (max-width: 1280px) {}
