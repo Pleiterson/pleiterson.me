@@ -21,3 +21,111 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+-------------------------
+# - A pasta __mocks__ é responsável por armazenar os mocks para a execução dos testes com Jest.
+# src/__mocks__
+
+# - Na pasta _assets são armezandos alguns CSS, fonts, icons, imagens e JS globais do projeto.
+# src/_assets/
+src/_assets/css
+src/_assets/fonts
+src/_assets/icons
+src/_assets/img
+# src/_assets/js
+
+# - A pasta _config como o próprio nome já diz, é responsável por realizar configurações no projeto como:
+# - config.js: Responsável por verificar qual ambiente está rodando e retornar suas configurações,podemos usá-las por exemplo: config.api.url que irá ter um valor respectivo para cada
+# ambiente.
+# - history.js: Criação e configuração do browser history ou hash history
+# - http: Criação e configuração do objeto axios, depois pode ser usado: http.get, abstraindo qualbiblioteca está sendo utilizada para realizar as requisições.
+# - reducers : Configuração e junção de todos os reducers do projeto.
+# - routes: Configuração e junção de todas as rotas do projeto.
+# - sagas: Configuração e junção de todos os sagas do projeto.
+# - scripts: Toda importação referente á arquivos .js
+# - store: Configuração da store global do Redux
+# - style: Toda importação referente á arquivos .css.
+# src/_config
+
+# - A pasta _environments é responsável por armazenar informações e configurações que diferenciam de umambiente para o outro, por exemplo a URL da API. As configurações de ambiente que
+# estiverem nesses arquivosnão devem ser informações sensíveis. Se por um acaso existir algum token ou api key, elas devem ser setadasatravés do dotenv e configuradas como variáveis de
+# ambiente. Assim, conseguimos em boa parte dos casos daruma segurança maior ao projeto, pois, as informações não estarão inclusas no bundle .js final e sendotrafegada pela rede, surgindo
+# a necessidade de hackear a máquina para ter acesso a tais variáveis.
+src/_environments
+src/_environments/__tests__
+
+# - Na pasta _translate é feita toda configuração de internacionalização e multí idiomas, nela, existe uma pastafilha chamada languages que para cada idioma terá um .js responsável pelas
+# traduções.
+src/_translate
+src/_translate/languages/__tests__
+
+# - A pasta components é responsável por armazenar todos os componentes do projeto, porém, existe um pequeno detalhe, os componentes localizados nessa pasta devem ser “globais”, ouseja,
+# utilizados em pelo menos duas features (irei explicar mais para frente) diferente. Caso um componente sejautilizado apenas por uma feature X, o mesmo deve ser criado dentro da pasta dessa
+# feature.
+# src/components
+
+# - A pasta constants armazena valores que são utilizados em vários lugares dos códigos, assim, caso algum valor um dia precise mudar ou ser atualizado, essa mudança e atualização será
+# feita em apenas um lugar.
+# src/constants
+src/constants/__tests__
+
+# - A pasta containers irá armazenar os componentes que são containers do projeto, em outras palavras, irá armazenar os componentes que fazem o wrap da aplicação.
+# src/containers
+src/containers/__tests__
+
+# - A pasta features irá armazenar e separar os contextos (alguns chamam de domínio) do projeto, por exemplo: client, product, home, login, dashboard, etc… Cada pasta feature deve possuir
+# todos os arquivos responsáveis, necessários e exlusivos da feature, podemosver por exemplo a feature de produto:
+# - Além desses arquivos, normalmente também teremos mais duas pastas dentro de cada feature, sendo elas: containers e pages: Dentro da pasta pages estará o componente que será renderizado
+# na tela. Dentro da pasta containers estarão os componentes burros que irão ser informados nas rotas e realiazarão omapeando das ações e store (mapDispatchToProps e mapStateToProps) para
+# os componentes da pasta pages, a ideia de não chamar diretamente os componentes da pasta pages é para facilitar futuramente nostestes, facilitando a necessidade de mockar ações, stores,
+# etc… Os containers basicamente serão wrap’s para os pages e cada page deve ter um container. Caso a feature precise de um componente exlusivo, uma pasta components deve ser criada para
+# armazená-lo.Se um dia ele for necessário e compartilhado em mais de uma feature o mesmo deve ser migrado para a pasta components da raiz (src/components). A ideia é parecida com a
+# especificidade do Editorconfig ou ESLint, quanto mais baixo for o nível da pasta, mais específica e exclusiva ela será.
+# src/pages
+
+# src/pages/About/
+src/pages/About/__tests__
+# src/pages/About/components
+# src/pages/About/containers
+
+# src/pages/Blog/
+src/pages/Blog/__tests__
+# src/pages/Blog/components
+# src/pages/Blog/containers
+
+# src/pages/Home/
+src/pages/Home/__tests__
+# src/pages/Home/components
+src/pages/Home/containers
+
+# src/pages/Projects/
+src/pages/Projects/__tests__
+# src/pages/Projects/components
+# src/pages/Projects/containers
+
+# src/pages/Resume/
+src/pages/Resume/__tests__
+# src/pages/Resume/components
+# src/pages/Resume/containers
+
+# src/pages/Works/
+src/pages/Works/__tests__
+# src/pages/Works/components
+# src/pages/Works/containers
+
+# - A pasta server contém todo o back-end da aplicação
+src/server
+# src/server/config
+# src/server/models
+# src/server/node_modules
+# src/server/routes
+# src/server/services
+
+# - A pasta helpers possuí valores e auxiliares para trabalhar com styled-components
+# src/helpers
+src/helpers/__tests__
+
+# - A pasta utils possui funções que serão reaproveitadas e utilizadas em várias partes dos códigos, assim, amanutenção fica mais fácil, pois, ao realizar a modificação em um determinado
+# arquivo, a mesma irá estardisponível para todo o projeto. Evitando também a repetição de código
+# src/utils
+src/utils/__tests__
