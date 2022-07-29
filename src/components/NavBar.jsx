@@ -65,7 +65,7 @@ const Navbar = styled.nav`
       }
 
       &:hover {
-        color: var(--color-txt-five);
+        color: var(--color-txt-six);
       }
     }
   }
@@ -115,7 +115,7 @@ const Navbar = styled.nav`
       }
 
       .items {
-        color: var(--color-txt-one);
+        color: var(--color-txt-two);
         font-family: var(--font-details);
         font-size: .8em;
         text-align: center;
@@ -126,7 +126,7 @@ const Navbar = styled.nav`
         &::before {
           content: '0' counter(item) '.';
           margin-right: .3em;
-          color: var(--color-txt-five);
+          color: var(--color-txt-six);
           text-align: right;
         }
       }

@@ -57,7 +57,7 @@ const Main = styled.main`
   }
 
   /* Versão para Mobile */
-  @media only screen and (max-width: 600px) {    
+  @media only screen and (max-width: 600px) {
     h1 {
       font-size: clamp(1em, 8vw, 3em);
     }
