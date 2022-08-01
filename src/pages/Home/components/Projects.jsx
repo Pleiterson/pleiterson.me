@@ -5,7 +5,7 @@ import mixin from '../../../helpers/styles';
 import { SubTitle, Title } from '../../../utils';
 import { Icon } from '../../../_assets/js';
 
-const ContainerTitle = styled.div`
+const ContainerTitle = styled.article`
   ${mixin.flexCenter};
 
   a {
@@ -28,7 +28,7 @@ const ContainerTitle = styled.div`
   @media only screen and (max-width: 1280px) {}
 `;
 
-const Wrapper = styled.section`
+const Wrapper = styled.article`
   ${mixin.flexWrapFlow};
   padding: 0 6em 6em;
   margin: 0 auto;
@@ -53,7 +53,7 @@ const Wrapper = styled.section`
   }
 `;
 
-const Container = styled.div`
+const Container = styled.section`
   ${mixin.flexWrapFlow};
   margin: .6em;
   padding: .6em;
@@ -167,6 +167,7 @@ const Projects = () => {
   return (
     <>
       <Title>Projetos e Trabalhos</Title>
+      
       <ContainerTitle>
         <a href="/project"><SubTitle>Mais projetos</SubTitle></a>
         <SubTitle>&nbsp;·&nbsp;</SubTitle>
@@ -174,15 +175,15 @@ const Projects = () => {
       </ContainerTitle>
 
       <Wrapper>
-        { projects && projects.map(({ icon, repo, linkRepo, project, linkProject, title, description, language, category }, i) => (
+        { projects && projects.map(({ icon, iconRepo, linkRepo, iconProject, linkProject, title, description, language, category }, i) => (
           <Container key={ i } className="pack">
             <div className="header">
               <div>
                 <Icon name={ icon } />
               </div>
               <div className="links">
-                <a className="link" href={ linkRepo } target="_blank" rel="noreferrer"><Icon name={ repo }/></a>
-                <a className="link" href={ linkProject } target="_blank" rel="noreferrer"><Icon name={ project }/></a>
+                <a className="link" href={ linkRepo } target="_blank" rel="noreferrer"><Icon name={ iconRepo }/></a>
+                <a className="link" href={ linkProject } target="_blank" rel="noreferrer"><Icon name={ iconProject }/></a>
               </div>
             </div>
             <div className="item">

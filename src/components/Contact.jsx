@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import mixin from '../helpers/styles';
 import { Title, SubTitle } from '../utils';
 
-const Container = styled.div`
+const Container = styled.article`
   ${mixin.pageCenter};
   width: 100%;
   margin: 0 auto 6em;
@@ -13,7 +13,12 @@ const Container = styled.div`
   p {
     width: 32%;
     padding: 0 0 3em;
+
+    span {
+      color: var(--color-txt-six);
+    }
   }
+
 
   form {
     ${mixin.flexCenter};
@@ -78,7 +83,9 @@ const Contact = () => {
       <Title>Entre em contato</Title>
       
       <Container>
-        <p>Minha caixa de entrada está sempre aberta. Tem alguma pergunta ou apenas queira dizer oi, será um prazer conversar com você!<br/>Bora conversar?</p>
+        <p>Minha caixa de entrada está sempre aberta. Tem alguma pergunta ou apenas queira dizer oi, será um prazer conversar com você!<br/>
+          <span>Bora conversar?</span>
+        </p>
 
         <form action="https://formsubmit.co/pleiterson@gmail.com" method="POST" id="contact-form">
           <input type="text" name="Nome" placeholder="Digite seu nome" required />

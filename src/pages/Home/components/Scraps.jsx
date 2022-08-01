@@ -5,7 +5,7 @@ import mixin from '../../../helpers/styles';
 import { Title, SubTitle } from '../../../utils';
 import { scraps } from '../../../constants/modules';
 
-const Wrapper = styled.section`
+const Wrapper = styled.article`
   ${mixin.flexWrapFlow};
   padding: 0 0 6em 0;
   width: 100%;
@@ -28,7 +28,7 @@ const Wrapper = styled.section`
   @media only screen and (max-width: 1280px) {}
 `;
 
-const Container = styled.div`
+const Container = styled.article`
   ${mixin.flexCenter};
   margin: 0 1.3em 1.3em;
   padding: 0 .6em .6em;
@@ -52,7 +52,7 @@ const Container = styled.div`
   @media only screen and (max-width: 1280px) {}
 `;
 
-const Data = styled.div`
+const Data = styled.section`
   ${mixin.flexCenter};
   flex-direction: column;
   justify-content: space-around;

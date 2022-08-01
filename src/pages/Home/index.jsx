@@ -97,8 +97,8 @@ const Home = () => {
           {' '}
           <a href="https://www.aec.com.br/" target="_blank" rel="noopener noreferrer">AeC</a> e
           {' '}
-          <em>Desenvolvedor Front-end Freelancer</em>
-          . Gosto de aprender coisas novas e minha paixão é codar. Atualmente estou estudando mais JavaScript, ReactJS, Node.js, CSS, HTML, TypeScript e posteriormente aprender mais sobre Java, Python, php, React Native, Flutter, .NET entre outras linguagens e frameworks. Também tenho conhecimento, acadêmico, em C++ e C#.
+          <em>Desenvolvedor Front-end Freelancer. </em>
+          Atudo com JavaScript, ReactJS, Node.js, CSS, HTML, TypeScript. Gosto de aprender coisas novas e minha paixão é codar e atualmente estou estudando mais e posteriormente aprender mais sobre Java, Python, php, React Native, Flutter, .NET entre outras linguagens e frameworks. Também tenho conhecimento, acadêmico, em C++ e C#.
         </p>
 
         <article>
@@ -109,7 +109,7 @@ const Home = () => {
           )) }
         </article>
 
-        <a href="#contact-form" className="contact">Entrar em contato</a>
+        <a href="#contact-form" className="contact">Entre em contato</a>
       </Main>
 
       <Projects />

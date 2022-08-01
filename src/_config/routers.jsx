@@ -3,7 +3,7 @@ import { BrowserRouter as Router,
         Routes,
         Route
        } from 'react-router-dom';
-import { Thanks } from '../components';
+import { PageNotFound, Thanks } from '../components';
 import About from '../pages/About';
 import Blog from '../pages/Blog';
 import Home from '../pages/Home';
@@ -19,6 +19,7 @@ const Routers = () => {
         <Route path="/blog" element={ <Blog /> }/>
         <Route path="/" element={ <Home /> }/>
         <Route path="/project" element={ <Projects /> }/>
+        <Route path="/404" element={ <PageNotFound /> }/>
         <Route path="/resume" element={ <Resume /> }/>
         <Route path="/thanks" element={ <Thanks /> }/>
         <Route path="/works" element={ <Works /> }/>

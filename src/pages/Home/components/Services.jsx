@@ -5,7 +5,7 @@ import mixin from '../../../helpers/styles';
 import { Title } from '../../../utils';
 import { Icon } from '../../../_assets/js';
 
-const Wrapper = styled.section`
+const Wrapper = styled.article`
   ${mixin.flexCenter};
   padding: 0 0 6em 0;
   width: 100%;
@@ -27,7 +27,7 @@ const Wrapper = styled.section`
   @media only screen and (max-width: 1280px) {}
 `;
 
-const Container = styled.div`
+const Container = styled.section`
   ${mixin.flexCenter};
   flex-direction: column;
   text-align: center;

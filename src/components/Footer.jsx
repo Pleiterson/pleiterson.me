@@ -5,7 +5,7 @@ import { FaCode } from 'react-icons/fa';
 import mixins from '../helpers/styles';
 import { Social } from './index.jsx';
 
-const Copyright = styled.div`
+const Copyright = styled.footer`
   ${mixins.flexCenter};
   justify-content: space-around;
   text-align: center;
