@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { BsDownload } from 'react-icons/bs';
 import { Contact, Footer, NavBar } from '../../components';
-import { SubTitle } from '../../utils';
+// import { SubTitle } from '../../utils';
 import { certificates } from '../../constants/modules';
 import { Projects, Scraps, Services } from './components';
 import mixin from '../../helpers/styles';
@@ -19,6 +19,15 @@ const Main = styled.main`
   h1 {
     margin: 0;
     font-size: clamp(3em, 8vw, 5em);
+  }
+
+  .title {
+    ${mixin.titleDetails};
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: .6em 0 1.3em;
+    padding-top: 5em;
   }
 
   h3 {
@@ -54,6 +63,7 @@ const Main = styled.main`
 
   .buttons {
     margin-top: 1.3em;
+    margin-bottom: 3em;
 
     a {
       margin: .6em;
@@ -102,7 +112,7 @@ const Home = () => {
       <NavBar />
 
       <Main>
-        <SubTitle>Oi, meu nome é</SubTitle>
+        <h2 className="title">Oi, meu nome é</h2>
         <h1>Pleiterson Amorim</h1>
         <h3>Eu construo coisas para web.</h3>
 

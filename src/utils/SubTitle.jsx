@@ -10,7 +10,7 @@ const SubTitlePage = styled.h2`
   margin: .6em 0 1.3em;
 
   @media screen and (max-width: 375px) {
-    padding-top: 5em;
+    /* padding-top: 5em; */
   }
   
   /* Versão para Mobile */
