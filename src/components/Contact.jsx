@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { GrSend } from 'react-icons/gr';
 import mixin from '../helpers/styles';
 import { Title, SubTitle } from '../utils';
 
@@ -97,7 +98,7 @@ const Contact = () => {
           {/*<input type="hidden" name="_cc" value="other@email.com" /> {/* envia o formulário com cópia para mais uma pessoa */}
           {/*<input type="hidden" name="_cc" value="other@email.com, yetanother@email.com" /> {/* envia o formulário com cópia para mais de uma pessoa */}
           <input type="hidden" name="_next" value="https://pleiterson.vercel.app/thanks" /> {/* mostra a tela de obrigado */}
-          <button type="submit">Enviar</button>
+          <button type="submit"><GrSend size={16} /> &nbsp;Enviar</button>
         </form>
       </Container>
     </>

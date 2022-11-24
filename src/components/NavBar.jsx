@@ -2,10 +2,8 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { BsDownload } from 'react-icons/bs';
 import { navLinks } from '../constants/modules';
 import mixin from '../helpers/styles';
-import cv from '../_assets/Curriculo-BR.pdf';
 
 const Navbar = styled.nav`
   ${mixin.flexBetween};
@@ -83,7 +81,7 @@ const Navbar = styled.nav`
   }
 
   /* Versão para Mobile */
-  @media only screen and (max-width: 600px) {}
+  /* @media only screen and (max-width: 600px) {} */
 
   /* Versão para Tablet */
   @media only screen and (max-width: 768px) {
@@ -162,10 +160,6 @@ const Navbar = styled.nav`
         font-size: .8em;
       }
     }
-
-    .resume {
-      display: none;
-    }
   }
 
   /* Versão para Large Screen */
@@ -189,16 +183,6 @@ const NavBar = () => {
               <Link to={ url } className="items">{ name }</Link>
             </li>
           )) }
-
-          <a
-            href={ cv }
-            className="resume"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <BsDownload size={15} />
-            &nbsp;Download CV
-          </a>
         </ul>
 
         <button

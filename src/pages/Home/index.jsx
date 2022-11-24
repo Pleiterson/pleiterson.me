@@ -1,10 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
+import { BsDownload } from 'react-icons/bs';
 import { Contact, Footer, NavBar } from '../../components';
 import { SubTitle } from '../../utils';
 import { certificates } from '../../constants/modules';
 import { Projects, Scraps, Services } from './components';
 import mixin from '../../helpers/styles';
+import cv from '../../_assets/Curriculo-BR.pdf';
 
 const Main = styled.main`
   ${mixin.flexCenter};
@@ -50,10 +52,17 @@ const Main = styled.main`
     }
   }
 
-  .contact {
+  .buttons {
+    margin-top: 1.3em;
+
+    a {
+      margin: .6em;
+    }
+  }
+  
+  .contact, .resume {
     ${mixin.button};
     margin-top: 3em;
-    
   }
 
   /* Versão para Mobile */
@@ -64,6 +73,12 @@ const Main = styled.main`
 
     h3 {
       font-size: 1em;
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      margin-top: 0em;
     }
   }
   
@@ -109,7 +124,10 @@ const Home = () => {
           )) }
         </article>
 
-        <a href="#contact-form" className="contact">Entre em contato</a>
+        <div className="buttons">
+          <a href="#contact-form" className="contact">Entre em contato</a>
+          <a href={ cv } className="resume" target="_blank" rel="noopener noreferrer"><BsDownload size={15} /> &nbsp;Download CV</a>
+        </div>
       </Main>
 
       <Projects />

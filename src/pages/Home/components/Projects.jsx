@@ -58,7 +58,7 @@ const Container = styled.section`
   margin: .6em;
   padding: .6em;
   width: 30%;
-  height: 17em;
+  height: 21em;
   box-shadow: .13em .13em .13em .13em rgba(2, 2, 2, 0.25);
   /* border: .06em solid var(--color-ln-two); */
   border-radius: .3em;
@@ -68,7 +68,7 @@ const Container = styled.section`
   .header {
     ${mixin.flexBetween};
     width: 100%;
-    margin: .6em;
+    margin: 0 .6em;
     padding: 0 .6em;
     
     svg {
@@ -124,7 +124,7 @@ const Container = styled.section`
   @media only screen and (max-width: 600px) {
     .pack {
       width: 100%;
-      height: 14em;
+      height: 16em;
       margin: .6em 0;
       padding: .6em;
     }
@@ -159,7 +159,7 @@ const Container = styled.section`
 
   /* Versão para Large Screen */
   @media only screen and (max-width: 1280px) {
-    height: 19em;
+    /* height: 21em; */
   }
 `;
 

@@ -22,6 +22,8 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+.vscode
+
 -------------------------
 # - A pasta __mocks__ é responsável por armazenar os mocks para a execução dos testes com Jest.
 # src/__mocks__
@@ -31,7 +33,7 @@ yarn-error.log*
 src/_assets/css
 src/_assets/fonts
 src/_assets/icons
-src/_assets/img
+# src/_assets/img
 # src/_assets/js
 
 # - A pasta _config como o próprio nome já diz, é responsável por realizar configurações no projeto como:
