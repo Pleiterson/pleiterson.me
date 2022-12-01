@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import { BsDownload } from 'react-icons/bs';
 import { Contact, Footer, NavBar } from '../../components';
-// import { SubTitle } from '../../utils';
 import { certificates } from '../../constants/modules';
 import { Projects, Scraps, Services } from './components';
 import mixin from '../../helpers/styles';

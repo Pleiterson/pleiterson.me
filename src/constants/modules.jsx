@@ -223,28 +223,28 @@ module.exports = {
       imageURL: 'https://imgur.com/I7eQ8MF.jpg',
       linkedin: 'https://www.linkedin.com/in/marcosvile/',
       name: 'Marcos Antônio Vilela Teixeira',
-      office: 'Técnico em Informática',
+      office: 'Analista de Infraestrutura Jr. na Aztec',
       description: '"Trabalhei com esse excepcional profissional entre os anos de 2017 à 2018, no qual pude aprender com Pleiterson, grandes lições como inovação constante, colaboração, humildade e honestidade. Pleiterson, é um profissional extremamente competente, gabaritado e tem um ótimo relacionamento interpessoal com os parceiros de trabalho, foi responsável por uma grande e considerável evolução e inovação nos processos de auditória e antifraude, o que consolida seus conhecimentos e efetividade que hoje abrange o LGPD. Profissional ímpar, sorte da empresa que o têm como funcionário."'
     },
     {
       imageURL: 'https://imgur.com/f1zgJwv.jpg',
       linkedin: 'https://www.linkedin.com/in/edimilson-silva-807622132/',
       name: 'Edimilson Silva',
-      office: 'Coordenador de Segurança',
+      office: 'Coordenador de Segurança na Rede Mater Dei de Saúde',
       description: '"Analítico, organizado, discreto, excelente conhecimento em excel e de bom relacionamento interpessoal. Agregava valor a equipe."'
     },
     {
       imageURL: 'https://imgur.com/2hP1CKs.jpg',
       linkedin: 'https://www.linkedin.com/in/renard-v-966b02ab/',
-      name: 'Renard Ventura, CPC-A',
-      office: 'Auditoria e Compliance',
+      name: 'Renard Ventura',
+      office: 'Coordenador de Compliance no Grupo SADA',
       description: '"Grande profissional! Pessoa do bem, analítico, ético, organizado e ponderado. Tem uma boa visão sistêmica e habilidade para construir ferramentas que agregam controle e segurança das informações sigilosas."'
     },
     {
       imageURL: 'https://i.imgur.com/X3GGENM.jpg',
       linkedin: 'https://www.linkedin.com/in/adriano-alves-de-oliveira-a87a55170/',
       name: 'Adriano Alves de Oliveira',
-      office: 'Coordenador de Segurança Eletrônica',
+      office: 'Coordenador de Segurança Eletrônica na AeC',
       description: '"Inteligente, responsável, e comprometido com suas atividades."'
     },
   ],

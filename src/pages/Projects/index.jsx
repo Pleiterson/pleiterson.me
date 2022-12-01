@@ -3,16 +3,23 @@ import styled from 'styled-components';
 import { Footer, NavBar, Social } from '../../components';
 import { allProjects } from '../../constants/projects';
 import mixin from '../../helpers/styles';
+import { Title } from '../../utils';
 // import { Iconimg } from '../../_assets/img';
 import { Icon } from '../../_assets/js';
+
+const TitlePage = styled.div`
+  h1 {
+    min-height: 20vh;
+  }
+`;
 
 const Main = styled.main`
   ${mixin.flexCenter};
   flex-direction: column;
   align-items: flex-start;
-  min-height: 30vh;
+  margin: 0 0 3em 0;
   /* margin: 0 12.5em; */
-  /* padding: 0 9.3em; */
+  /* padding: 9.3em 0; */
 
   span {
     font-style: italic;
@@ -160,7 +167,15 @@ const Container = styled.section`
 
   /* Versão para Large Screen */
   @media only screen and (max-width: 1280px) {
-    height: 19em;
+    height: 29em;
+
+    .item {
+      img {
+        /* margin-top: 1em; */
+        padding: .6em 0;
+        max-width: 15em;
+      }
+    }
   }
 `;
 
@@ -168,11 +183,15 @@ const Projects = () => {
   return (
     <>
       <NavBar />
+        
+        <TitlePage>
+          <Title>Projetos</Title>
+        </TitlePage>
 
         <Main>
-          <p>Aqui tem vários dos projetos acadêmicos que realizei ao longo de todo o meu aprendizado em programação.</p>
-          <p>Vários destes projetos tem um link na Vercel para você ver como ficou, outros possui apenas o repositório no GitHub ou GitLab.</p>
-          <p>Alguns destes são pessoais, para treinar. Veja na hashtag <strong><em>#pessoal</em></strong>.</p>
+          <p>Aqui tem vários dos projetos acadêmicos que realizei, e realizando, ao longo de todo o meu aprendizado em programação.</p>
+          {/* <p>Vários destes projetos tem um link na Vercel para você ver como ficou, outros possui apenas o repositório no GitHub ou GitLab.</p> */}
+          {/* <p>Alguns destes são pessoais, para treinar. Veja na hashtag <strong><em>#pessoal</em></strong>.</p> */}
           <span>Posteriormente vou fazer uma sidebar com um filtro das hashtags, assim os projetos aparecerá conforme a hashtag clicada.</span>
         </Main>
 
