@@ -121,7 +121,7 @@ const Home = () => {
           {' '}
           <a href="https://fiskaldigital.com.br/" target="_blank" rel="noopener noreferrer">Fiskal Digital Services</a> e
           {' '}
-          <em>Desenvolvedor Front-end Freelancer. </em>
+          <em>Desenvolvedor Freelancer. </em>
           Atudo com JavaScript, React, Node.js, CSS, HTML, TypeScript. Gosto de aprender coisas novas e amo codar. Aprendendo mais sobre Java, Python, php, React Native, Flutter, .NET entre outras linguagens e frameworks. Também tenho conhecimento, acadêmico, em C++ e C#.
         </p>
 
