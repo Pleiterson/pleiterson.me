@@ -117,12 +117,12 @@ const Home = () => {
 
         <p>Sou
           {' '}
-          <em>Analista Administrativo Pleno</em> na
+          <em>Desenvolvedor Full Stack Júnior</em> na
           {' '}
-          <a href="https://www.aec.com.br/" target="_blank" rel="noopener noreferrer">AeC</a> e
+          <a href="https://fiskaldigital.com.br/" target="_blank" rel="noopener noreferrer">Fiskal Digital Services</a> e
           {' '}
           <em>Desenvolvedor Front-end Freelancer. </em>
-          Atudo com JavaScript, ReactJS, Node.js, CSS, HTML, TypeScript. Gosto de aprender coisas novas e minha paixão é codar e atualmente estou estudando mais e posteriormente aprender mais sobre Java, Python, php, React Native, Flutter, .NET entre outras linguagens e frameworks. Também tenho conhecimento, acadêmico, em C++ e C#.
+          Atudo com JavaScript, React, Node.js, CSS, HTML, TypeScript. Gosto de aprender coisas novas e amo codar. Aprendendo mais sobre Java, Python, php, React Native, Flutter, .NET entre outras linguagens e frameworks. Também tenho conhecimento, acadêmico, em C++ e C#.
         </p>
 
         <article>
